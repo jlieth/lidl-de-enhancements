@@ -5,6 +5,11 @@
 
     "description": "Enhancements for the lidl.de shop",
 
+    "icons": {
+        "48": "icon.svg",
+        "96": "icon.svg"
+    },
+
     "content_scripts": [
         {
             "matches": ["*://www.lidl.de/c/*"],

@@ -35,16 +35,33 @@ function addNavigation() {
         page.insertBefore(navbar, firstSection)
     }
 
-    let secondNav = document.createElement("ul")
-    secondNav.classList.add("ATheAnchorBar__List")
-    let html = ""
-    html += "<li class='ATheAnchorBar__Item'><a id='offline_button' class='ATheAnchorBar__Link' href='#'>"
-    html += "Offline (" + offline.length + ")</a></li>"
-    html += "<li class='ATheAnchorBar__Item'><a id='online_button' class='ATheAnchorBar__Link' href='#'>"
-    html += "Online (" + online.length + ")</a></li>"
-    secondNav.innerHTML = html
+    let nav = document.createElement("ul")
+    nav.classList.add("ATheAnchorBar__List")
+    navbar.appendChild(nav)
 
-    navbar.appendChild(secondNav)
+    // create list element with offline button
+    let offlineLi = document.createElement("li")
+    offlineLi.classList.add("ATheAnchorBar__Item")
+    nav.appendChild(offlineLi)
+
+    let offlineLiA = document.createElement("a")
+    offlineLiA.id = "offline_button"
+    offlineLiA.classList.add("ATheAnchorBar__Link")
+    offlineLiA.href = "#"
+    offlineLiA.innerText = "Offline (" + offline.length + ")"
+    offlineLi.appendChild(offlineLiA)
+
+    // create list element with online button
+    let onlineLi = document.createElement("li")
+    onlineLi.classList.add("ATheAnchorBar__Item")
+    nav.appendChild(onlineLi)
+
+    let onlineLiA = document.createElement("a")
+    onlineLiA.id = "online_button"
+    onlineLiA.classList.add("ATheAnchorBar__Link")
+    onlineLiA.href = "#"
+    onlineLiA.innerText = "Online (" + online.length + ")"
+    onlineLi.appendChild(onlineLiA)
 }
 
 function connectEvents() {

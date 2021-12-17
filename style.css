@@ -1,0 +1,54 @@
+.ATheAnchorBar,
+#content_script_nav_bar {
+    justify-content: space-between;
+    padding: 0.5em;
+    background: rgba(162, 162, 162, 0.81);
+}
+
+#content_script_nav_bar {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 3;
+}
+
+#content_script_nav_bar ul {
+    border-radius: 0.125rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#content_script_nav_bar ul li {
+    white-space: nowrap;
+    display: inline-flex;
+    border-right: 1px #e3e4e5 solid;
+}
+
+#content_script_nav_bar ul li:last-child {
+    border-right: none;
+}
+
+#content_script_nav_bar ul li a {
+    font-family: LidlFontCondPro, "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #353b42;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#content_script_nav_bar ul li a:focus,
+#content_script_nav_bar ul li a:active,
+#content_script_nav_bar ul li a:hover {
+    background-color: #003673;
+    color: #ffffff;
+}
+
+#content_script_nav_bar ul li a.active {
+    background-color: #0050aa;
+    color: #ffffff;
+}

@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Lidl.de enhancements",
+    "version": "0.1.0",
+
+    "description": "Enhancements for the lidl.de shop",
+
+    "content_scripts": [
+        {
+            "matches": ["*://www.lidl.de/c/*"],
+            "run_at": "document_idle",
+            "js": ["content_script.js"],
+            "css": ["style.css"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "lidl-de-enhancements@futurewidgets.eu"
+        }
+    }
+}

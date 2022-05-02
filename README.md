@@ -15,18 +15,23 @@ The article view always shows online and offline articles together (usually with
 a lot more online-only articles). This is annoying if you just want to know
 what your local store has on offer this week.
 
-![](screenshots/availability.png)
+|![](screenshots/availability.png)|
+|-|
+
 
 With this extension you can filter the article list for online and offline
 articles.
 
-![](screenshots/filter.png)
+|![](screenshots/filter.png)|
+|-|
 
 ### Ads/Teasers
 
 There are often ads/teasers for related articles and offers in
 the article listing. I think they're annoying so I decided to hide them.
 
-![](screenshots/teaser_1.png)
+|![](screenshots/teaser_1.png)|
+|-|
 
-![](screenshots/teaser_2.png)
+|![](screenshots/teaser_2.png)|
+|-|
